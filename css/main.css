@@ -13,7 +13,7 @@ html {
 	margin-top: 40px;
 	width: 70%;
 	height: 100%;
-	overflow: auto;
+	overflow: hidden;
 }
 .cell {
 	text-align: center;
@@ -39,7 +39,7 @@ html {
   display: inline-block;
   white-space: nowrap;
 	background-color: rgba(255, 255, 255, 0.2);
-	font-family: verdana;
+	font-family: verdana, sans-serif;
 	font-size: 12px;
 	padding: 5px;
 	color: #fff;
@@ -54,7 +54,7 @@ ul{
   /* margin: auto; */
 	opacity: 0;
 	background-color: rgba(44, 49, 117, 0.9);
-	font-family: verdana;
+	font-family: verdana, sans-serif;
 	padding: 5px;
 	border-radius: 2px;
 	overflow: hidden;
