@@ -1,15 +1,21 @@
 body {
-  background: url("../images/background.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: #011229;
   height: 100vh;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  height: 100vh;
   font-family: verdana, sans-serif;
+}
+.background {
+  background: url("../images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  filter: blur(12px);
+  transform: scale(1.1);
 }
 .main {
 	margin: auto;
@@ -27,7 +33,7 @@ body {
 	width: 14.2%;
 	height: 18%;
 	transform: scale(1);
-	transition-property: transform;
+  transition: all .3s;
 	transition-duration: 0.5s;
 }
 .cell:hover {
@@ -72,7 +78,6 @@ body {
   position:relative;
   text-align: right;
   display: block;
-  /* float: right; */
   white-space: nowrap;
 	text-decoration: none;
 	color: #fff;
@@ -121,7 +126,7 @@ body {
 	.main {width: 85%;}
 }
 @media screen and (orientation: portrait){
-  .main {width: 100%; overflow: auto;}
+  .main {width: 100%;}
   .cell {width: 20%; height: 13%}
 }
 
