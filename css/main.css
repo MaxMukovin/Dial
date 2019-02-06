@@ -1,22 +1,20 @@
 body {
-  background-color: #011229;
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   font-family: verdana, sans-serif;
+  overflow: hidden;
 }
 .background {
   background: url("../images/background.jpg") no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   width: 100%;
+  top: 0;
   position: absolute;
   overflow: hidden;
-  top: 0;
-  filter: blur(12px);
-  transform: scale(1.1);
 }
+
 .main {
 	margin: auto;
 	margin-top: 3%;
@@ -47,7 +45,7 @@ body {
   margin-top: 10px;
   display: inline-block;
   white-space: nowrap;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 0, 0, 0.8);
 	font-size: 12px;
 	padding: 5px;
 	color: #fff;
@@ -61,49 +59,42 @@ body {
   overflow: hidden;
   display: block;
   position: absolute;
-  bottom: 90%;
-  right: 20%;
-	background-color: rgba(44, 49, 117, 0.9);
+  bottom: 85%;
+  right: 15%;
+	background-color: rgba(0, 0, 0, 0.8);
+  /* background-color: rgba(44, 49, 117, 0.9); */
 	border-radius: 2px;
   opacity: 0;
   transition: all .3s;
   transform: scaleY(0);
   transform-origin: bottom;
-  transition-property: all;
-	transition-duration: .7s;
-  transition-delay: .5s;
+	/* transition-duration: .4s; */
+  transition-delay: .3s;
 }
 .link {
+  transition: all .3s;
   overflow: hidden;
-  position:relative;
   text-align: right;
   display: block;
   white-space: nowrap;
 	text-decoration: none;
 	color: #fff;
-	font-size: 1em;
-	padding: 3px;
+	font-size: .9em;
+	padding: 8px;
   margin: 0;
-	border-radius: 2px;
   clear: both;
 }
 .link:hover {
-  color: #fff;
-  background-color: #356DC6;
+  padding-right: 12px;
+  padding-left: 4px;
+  background-color: rgba(100, 100, 100, 0.7);
 }
 .cell:hover .overlay {
 	opacity: 0.9;
-	transition-duration: 0.7s;
 }
 .cell:hover .subMenu {
 	opacity: 1;
-  padding: 5px;
   transform: scaleY(1);
-
-	transition-duration: 0.3s;
-}
-.cell:hover .link {
-	/* width: 100%; */
 }
 .delay2 {transition-delay: 2s}
 .delay1 {transition-delay: 1s}
