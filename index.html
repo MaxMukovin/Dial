@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="main.css"/>
+    <link rel="stylesheet" href="main.css?13" type="text/css"/>
+    <meta http-equiv="cache-control" content="no-cache"/>
     <link rel="shortcut icon" id="favicon" type="image/x-icon" href="favicon.ico"/>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#011229">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8"/>
+    <!--<meta name="theme-color" content="#025db0"/>-->
+    <meta name="theme-color" content="#ссс"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <script src="QRcode generator/jquery.min.js"></script>
     <script src="QRcode generator/qrcode.js"></script>
     <script src="QRcode generator/app.js"></script>
     <title>Dial</title>
   </head>
   <body>
-    <div class="background"></div>
+    <div class="background">
+        <div id="background" class="blur"></div>
+        <div class="brightness"></div>
+    </div>
+      <script>
+        function getRandom() {
+            return Math.round(Math.random()*4);
+        }
+        var rnd = getRandom();
+        background.style.background = `${"url(\"images/background"+rnd+".jpg\") no-repeat top left fixed"}`;
+        background.style.opacity = "1";
+      </script>
+
     <div class="main">
       <a id="cell-01" class="cell sm" href="https://yandex.ru" target="_blank"><div class="overlay delay1_5">Яндекс</div></a>
       <a id="cell-02" class="cell md" href="https://mail.yandex.ru" target="_blank"><div class="overlay delay1_5">Яндекс.Почта</div></a>
@@ -27,7 +42,7 @@
       <a id="cell-11" class="cell md" href="https://mail.ru" target="_blank"><div class="overlay delay1_5">Mail.ru</div></a>
       <a id="cell-12" class="cell md" href="https://pikabu.ru" target="_blank"><div class="overlay delay1_5">Пикабу</div></a>
       <a id="cell-13" class="cell md" href="https://ru.aliexpress.com" target="_blank"><div class="overlay delay1_5">AliExpress</div></a>
-      <a id="cell-14" class="cell md" href="https://www.joom.com/ru" target="_blank"><div class="overlay delay1_5">Joom</div></a>
+      <a id="cell-14" class="cell md" href="https://onedrive.live.com/" target="_blank"><div class="overlay delay1_5">OneDrive</div></a>
       <a id="cell-15" class="cell md" href="https://store.steampowered.com" target="_blank"><div class="overlay delay1_5">Steam</div></a>
       <a id="cell-16" class="cell md" href="https://origin.com" target="_blank"><div class="overlay delay1_5">Origin</div></a>
       <a id="cell-17" class="cell bg" href="https://www.citilink.ru" target="_blank"><div class="overlay delay1_5">Ситилинк</div></a>
@@ -36,11 +51,11 @@
       <a id="cell-20" class="cell md" href="https://instagram.com" target="_blank"><div class="overlay delay1_5">Instagram</div></a>
       <a id="cell-21" class="cell bg" href="https://pochta.ru/tracking" target="_blank"><div class="overlay delay1_5">Почта России</div></a>
       <a id="cell-22" class="cell md" href="https://github.com/MaxMukovin" target="_blank"><div class="overlay delay1_5">GitHub</div></a>
-      <a id="cell-23" class="cell bg" href="https://speedtest.net" target="_blank"><div class="overlay delay1_5">SpeedTest</div></a>
+      <a id="cell-23" class="cell md" href="https://speedtest.net" target="_blank"><div class="overlay delay1_5">SpeedTest</div></a>
       <a id="cell-24" class="cell md" href="http://langamepp.com/iptv/playlists" target="_blank"><div class="overlay delay1_5">IP-TV</div></a>
-      <a id="cell-25" class="cell md" href="https://coinmarketcap.com/ru/" target="_blank"><div class="overlay delay1_5">CoinMarketCap</div></a>
-      <a id="cell-26" class="cell bg" href="https://spb.rt.ru" target="_blank"><div class="overlay delay1_5">Ростелеком</div></a>
-      <a id="cell-27" class="cell md" href="https://hdrezka.ag" target="_blank"><div class="overlay delay1_5">HDрезка</div></a>
+      <a id="cell-25" class="cell md" href="https://coinmarketcap.com" target="_blank"><div class="overlay delay1_5">CoinMarketCap</div></a>
+      <a id="cell-26" class="cell md" href="https://www.litres.ru/" target="_blank"><div class="overlay delay1_5">ЛитРес</div></a>
+      <a id="cell-27" class="cell md" href="https://to-do.microsoft.com/tasks/" target="_blank"><div class="overlay delay1_5">Microsoft To-Do</div></a>
       <a id="cell-28" class="cell md" href="https://git.opendev.club" target="_blank"><div class="overlay delay1_5">GitLab</div></a>
       <a id="cell-29" class="cell md" href="https://web.telegram.org" target="_blank"><div class="overlay delay1_5">Telegram</div></a>
       <a id="cell-30" class="cell md" href="https://mm.opendev.club" target="_blank"><div class="overlay delay1_5">Mattermost</div></a>
@@ -69,8 +84,8 @@
         <div class="subMenu">
           <div class="blockMenu">
             <a class="link" href="https://mail.gazprom-neft.ru/owa" target="_blank">Почта ГПН</a>
-            <a class="link" href="https://cp.hostiman.ru/clientarea.php" target="_blank">HostIman</a>
             <a class="link" href="https://steamcardexchange.net/index.php?showcase" target="_blank">SteamCE</a>
+            <a class="link" href="https://cloud.mail.ru/public/Ag2B/pDs4kFJrz" target="_blank">Cloud.Mail</a>
           </div>
         </div>
       </div>
