@@ -13,8 +13,7 @@ function init() {
 	block.style.position = "absolute";
 	block.style.top = "10px";
 	block.style.right = "10px";
-	block.style.position = "fixed";
-
+	
 	var qrcode = new QRCode(document.getElementById("qrcode"), {
 		width : 250,
 		height : 250
