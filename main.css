@@ -1,147 +1,194 @@
 body {
-  height: 100vh;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: verdana, sans-serif;
-  /*overflow: hidden;*/
+height: 100vh;
+width: 100%;
+margin: 0;
+padding: 0;
+font-family: verdana, sans-serif;
+/*overflow: hidden;*/
 }
 .background {
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  background-size: cover;
-  background-position: top left;
-  overflow: hidden;
+position: absolute;
+height: 100vh;
+width: 100%;
+top: 0;
+background-size: cover;
+background-position: top left;
+overflow: hidden;
 }
 #window {
-  position: relative;
-  margin: auto;
-  margin-top: 4%;
-  width: 114vh;
-  height: 82vh;
-  border-radius: 10px;
-  overflow: hidden;
-  top: 0;
-  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-  /* background-color: rgba(255,255,255,.1); */
+position: relative;
+margin: auto;
+margin-top: 4%;
+width: 114vh;
+height: 82vh;
+border-radius: 10px;
+overflow: hidden;
+top: 0;
+box-shadow: 2px 5px 3px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+/*background-color: rgba(255,255,255,.6); */
+/*background-color: rgba(0,0,0,.5); */
+
+backdrop-filter: blur(10px);
+
 }
 #bgwindow {
-  width: 100vw;
-  height: 100vh;
-  background-size: cover;
-  background-position: top left;
-  background-image: url(https://img2.fonwall.ru/o/pf/backgrounds-glass-textures.jpg);
-  /* filter: blur(20px); */
-  opacity: .1;
+width: 100vw;
+height: 100vh;
+background-size: cover;
+background-position: top left;
+background-image: url(https://img2.fonwall.ru/o/pf/backgrounds-glass-textures.jpg);
+/* filter: blur(20px); */
+opacity: .1;
+}
+form {
+position: absolute;
+top: 15px;
+opacity: .4;
+transition: all .3s;
+width: 100%;
+z-index: 100;
+}
+form div {
+width: 245px;
+height: 30px;
+margin: auto;
+z-index: 100;
+}
+form:hover {opacity: .8}
+input[type="text"] {
+width: 100%;
+float: left;
+outline:none;
+border-radius: 16px;
+border: 1px solid #ccc;
+padding: 7px;
+box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+background-position: center;
+}
+input[type="submit"]{
+height: 31px;
+outline:none;
+border: none;
+width:31px;
+margin-left: -32px;
+background-image: url(https://img.icons8.com/color/48/000000/google-web-search--v1.png);
+background-position: center;
+background-size: 26px 26px;
+background-repeat: no-repeat;
+background-color: transparent;
+transition: all .3s;
+opacity: .8;
+cursor: pointer;
+}
+input[type="submit"]:hover{
+opacity: 1;
 }
 .main {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  margin: 1vh;
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+overflow: hidden;
+margin: 1vh;
 }
 .cell {
-  text-align: center;
-  text-decoration: none;
-  float: left;
-  display: block;
-  background-repeat: no-repeat;
-  background-position: center center;
-  width: 13vh;
-  height: 13vh;
-  transform: scale(1);
-  transition: transform .3s, opacity .3s;
-  transition-duration: 0.5s;
-  background-color: rgba(0,2,15,.5);
-  margin: 1.5vh;
-  border-radius: 7px;
-  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+text-align: center;
+text-decoration: none;
+float: left;
+display: block;
+background-repeat: no-repeat;
+background-position: center center;
+width: 13vh;
+height: 13vh;
+transform: scale(1);
+transition: transform .3s, box-shadow .3s ;
+transition-duration: .5s;
+background-color: rgba(0,2,15,.5);
+margin: 1.5vh;
+z-index: -1;
+border-radius: 7px;
+box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
 }
 .cell:hover {
-  transform: scale(1.1);
-  transition-property: transform;
-	transition-duration: 0.5s;
-  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.4), 0px 2px 2px 0px rgba(0,0,0,0.3), 0px 1px 5px 0px rgba(0,0,0,0.25);
-
+position: relative;
+z-index: 99;
+transform: scale(1.1);
+/* transition-property: transform; */
+background-color: rgba(0,2,15,.5);
+box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.4), 0px 2px 2px 0px rgba(0,0,0,0.3), 0px 1px 5px 0px rgba(0,0,0,0.25);
 }
 .noactive:active {transform: scale(1.15)}
 .overlay {
-	opacity: 0;
-  min-width: 80%;
-  margin-top: 10px;
-  display: inline-block;
-  white-space: nowrap;
-	background-color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	padding: 5px;
-	color: #fff;
-	border-radius: 2px;
-  transition-property: opacity;
-	transition-duration: .7s;
+opacity: 0;
+min-width: 80%;
+margin-top: 10px;
+display: inline-block;
+white-space: nowrap;
+background-color: rgba(0, 0, 0, 0.8);
+font-size: 12px;
+padding: 5px;
+color: #fff;
+border-radius: 2px;
+transition-property: opacity;
+transition-duration: .7s;
 }
 .subMenu{
-  padding: 0;
-  margin: 0;
-  display: block;
-  position: absolute;
-  bottom: 85%;
-  right: 15%;
-  background-color: rgba(0, 0, 0, 0.8);
-  opacity: 0;
-  transform: scaleY(0);
-  transition: all .3s;
-  transform-origin: bottom;
-  transition-delay: .3s;
-  border-radius: 2px 2px 0 2px;
+padding: 0;
+margin: 0;
+display: block;
+position: absolute;
+bottom: 85%;
+right: 15%;
+background-color: rgba(0, 0, 0, 0.8);
+opacity: 0;
+transform: scaleY(0);
+transition: all .3s;
+transform-origin: bottom;
+transition-delay: .3s;
+border-radius: 2px 2px 0 2px;
 }
 .blockMenu {
-  border-radius: 2px 2px 0 2px;
-  position: relative;
-  overflow: hidden;
-
- }
- .subMenu::before, .block::after {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  border: 5px solid transparent;
-  border-top: 5px solid rgba(0, 0, 0, 0.8);
-  border-right: 5px solid rgba(0, 0, 0, 0.8);
-  right: 0;
- }
- .blockMenu::after {
-  border-top: 10px solid white;
-  bottom: -19px;
- }
-
+border-radius: 2px 2px 0 2px;
+position: relative;
+overflow: hidden;
+}
+.subMenu::before, .block::after {
+content: '';
+position: absolute;
+bottom: -10px;
+border: 5px solid transparent;
+border-top: 5px solid rgba(0, 0, 0, 0.8);
+border-right: 5px solid rgba(0, 0, 0, 0.8);
+right: 0;
+}
+.blockMenu::after {
+border-top: 10px solid white;
+bottom: -19px;
+}
 .link {
-  transition: all .3s;
-  overflow: hidden;
-  text-align: right;
-  display: block;
-  white-space: nowrap;
-	text-decoration: none;
-	color: #fff;
-	font-size: .9em;
-	padding: 8px;
-  margin: 0;
-  clear: both;
+transition: all .3s;
+overflow: hidden;
+text-align: right;
+display: block;
+white-space: nowrap;
+text-decoration: none;
+color: #fff;
+font-size: .9em;
+padding: 8px;
+margin: 0;
+clear: both;
 }
 .link:hover {
-  padding-right: 12px;
-  padding-left: 4px;
-  background-color: rgba(100, 100, 100, 0.7);
+padding-right: 12px;
+padding-left: 4px;
+background-color: rgba(100, 100, 100, 0.7);
 }
 .cell:hover .overlay {
-	opacity: 0.9;
+opacity: 0.9;
 }
 .cell:hover .subMenu {
-	opacity: 1;
-  transform: scaleY(1);
+opacity: 1;
+transform: scaleY(1);
 }
 .delay2 {transition-delay: 2s}
 .delay1 {transition-delay: 1s}
@@ -150,56 +197,21 @@ body {
 .sm {background-size: 40%;}
 .md {background-size: 50%;}
 .bg {background-size: 70%;}
-
 @media (max-width: 115vh) {
-  #window {width: 98%; height: 85%; border-radius: 5px}
-  .cell {width: 11.8vw; height: 11.8vw; margin: 1vw}
+#window {width: 98%; height: 85%; border-radius: 5px}
+.cell {width: 11.8vw; height: 11.8vw; margin: 1vw}
 }
 @media screen and (orientation: portrait){
-  #window {width: 62vh; height: 90vh; border-radius: 5px}
-  .cell {width: 10vh; height: 10vh; margin: 1vh}
+#window {width: 62vh; height: 90vh; border-radius: 5px}
+.cell {width: 10vh; height: 10vh; margin: 1vh}
 }
 @media screen and (orientation: portrait) and (max-width: 70vh){
-  #window {width: 98%; height: 140vw; border-radius: 5px}
-  .cell {width: 15.9vw; height: 15.9vw; margin: 1.5vw}
+#window {width: 98%; height: 140vw; border-radius: 5px}
+.cell {width: 15.9vw; height: 15.9vw; margin: 1.5vw}
 }
-
 ::-webkit-scrollbar {
-  width: 0;
+width: 0;
 }
-
-#cell-01 {background-image: url(images/Tiles/01.png)}
-#cell-02 {background-image: url(images/Tiles/02.png)}
-#cell-03 {background-image: url(images/Tiles/03.png)}
-#cell-04 {background-image: url(images/Tiles/04.png)}
-#cell-05 {background-image: url(images/Tiles/05.png)}
-#cell-06 {background-image: url(images/Tiles/06.png)}
-#cell-07 {background-image: url(images/Tiles/07.png)}
-#cell-08 {background-image: url(images/Tiles/08.png)}
-#cell-09 {background-image: url(images/Tiles/09.png)}
-#cell-10 {background-image: url(images/Tiles/10.png)}
-#cell-11 {background-image: url(images/Tiles/11.png)}
-#cell-12 {background-image: url(images/Tiles/12.png)}
-#cell-13 {background-image: url(images/Tiles/13.png)}
-#cell-14 {background-image: url(images/Tiles/14.png)}
-#cell-15 {background-image: url(images/Tiles/15.png)}
-#cell-16 {background-image: url(images/Tiles/16.png)}
-#cell-17 {background-image: url(images/Tiles/17.png)}
-#cell-18 {background-image: url(images/Tiles/18.png)}
-#cell-19 {background-image: url(images/Tiles/19.png)}
-#cell-20 {background-image: url(images/Tiles/20.png)}
-#cell-21 {background-image: url(images/Tiles/21.png)}
-#cell-22 {background-image: url(images/Tiles/22.png)}
-#cell-23 {background-image: url(images/Tiles/23.png)}
-#cell-24 {background-image: url(images/Tiles/24.png)}
-#cell-25 {background-image: url(images/Tiles/25.png)}
-#cell-26 {background-image: url(images/Tiles/26n.png)}
-#cell-27 {background-image: url(images/Tiles/27.png)}
-#cell-28 {background-image: url(images/Tiles/28.png)}
-#cell-29 {background-image: url(images/Tiles/29.png)}
-#cell-30 {background-image: url(images/Tiles/30.png)}
-#cell-31 {background-image: url(images/Tiles/31.png)}
-#cell-32 {background-image: url(images/Tiles/32.png)}
-#cell-33 {background-image: url(images/Tiles/33.png)}
-#cell-34 {background-image: url(images/Tiles/34.png)}
-#cell-35 {background-image: url(images/Tiles/35.png)}
+#cell_33 {background-image: url(images/Tiles/33.png)}
+#cell_34 {background-image: url(images/Tiles/34.png)}
+#cell_35 {background-image: url(images/Tiles/35.png)}
