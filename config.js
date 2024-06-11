@@ -1,162 +1,212 @@
 var dialsArray = [
-  [ //01
+  [
     "https://yandex.ru",
     "Яндекс",
-    "url(images/Tiles/yandex.png)"
+    "url(images/Tiles/yandex.png)",
+    "md"
   ],
-  [ //02
-    "https://mail.yandex.ru",
-    "Яндекс.Почта",
-    "url(images/Tiles/02.png)"
-  ],
-  [ //03
+  [
     "https://yandex.ru/maps",
     "Яндекс.Карты",
-    "url(images/Tiles/03.png)"
+    "url(images/Tiles/yandex_maps.png)",
+    "md"
   ],
-  [ //04
+  [
     "https://music.yandex.ru",
     "Яндекс.Музыка",
-    "url(images/Tiles/04.png)"
+    "url(images/Tiles/yandex_music.png)",
+    "md"
   ],
-  [ //05
+  [
     "https://google.ru",
     "Google",
-    "url(images/Tiles/05.png)"
+    "url(images/Tiles/google.png)",
+    "md"
   ],
-  [ //06
-    "https://keep.google.com",
-    "Google.Keep",
-    "url(images/Tiles/06.png)"
+  [
+    "https://news.google.com",
+    "GoogleNews",
+    "url(images/Tiles/GoogleNews.png)",
+    "md"
   ],
-  [ //07
+  [
+    "https://translate.google.ru",
+    "GoogleTranslate",
+    "url(images/Tiles/google_translate.png)",
+    "sm"
+  ],
+  [
     "https://youtube.com",
     "YouTube",
-    "url(images/Tiles/07.png)"
+    "url(images/Tiles/youtube.png)",
+    "md"
   ],
-  [ //08
-    "https://translate.google.ru",
-    "Google.Translate",
-    "url(images/Tiles/08.png)"
+  [
+    "https://keep.google.com",
+    "GoogleKeep",
+    "url(images/Tiles/google_keep.png)",
+    "bg"
   ],
-  [ //09
+  [
     "https://vk.com",
     "Вконтакте",
-    "url(images/Tiles/09.png)"
+    "url(images/Tiles/vk.png)",
+    "bg"
   ],
-  [ //10
-    "https://web.whatsapp.com",
-    "WhatsApp",
-    "url(images/Tiles/10.png)"
+  [
+    "https://www.tinkoff.ru/mybank/",
+    "Tinkoff",
+    "url(images/Tiles/tinkoff.png)",
+    "bg"
   ],
-  [ //11
+  [
     "https://e.mail.ru/inbox/",
     "Mail.ru",
-    "url(images/Tiles/11.png)"
+    "url(images/Tiles/mailru.png)",
+    "bg"
   ],
-  [ //12
+  [
     "https://pikabu.ru",
     "Пикабу",
-    "url(images/Tiles/12.png)"
+    "url(images/Tiles/pikabu.png)",
+    "bg"
   ],
-  [ //13
-    "https://ru.aliexpress.com",
-    "AliExpress",
-    "url(images/Tiles/13.png)"
-  ],
-  [ //14
-    "https://onedrive.live.com",
-    "OneDrive",
-    "url(images/Tiles/14.png)"
-  ],
-  [ //15
-    "https://store.steampowered.com",
-    "Steam",
-    "url(images/Tiles/15.png)"
-  ],
-  [ //16
-    "https://origin.com",
-    "Origin",
-    "url(images/Tiles/16.png)"
-  ],
-  [ //17
-    "https://www.tinkoff.ru/invest/portfolio/2097049643",
-    "Тинькофф Инвестиции",
-    "url(images/Tiles/17.png)"
-  ],
-  [ //18
-    "https://market.yandex.ru",
-    "Яндекс.Маркет",
-    "url(images/Tiles/18.png)"
-  ],
-  [ //19
-    "https://www.ozon.ru/",
-    "Ozon",
-    "url(images/Tiles/19.png)"
-  ],
-  [ //20
+  [
     "https://instagram.com",
     "Instagram",
-    "url(images/Tiles/20.png)"
+    "url(images/Tiles/instagram.png)",
+    "bg"
   ],
-  [ //21
-    "https://pochta.ru/tracking",
-    "Почта России",
-    "url(images/Tiles/21.png)"
+  [
+    "https://console.yandex.cloud/folders/b1gtqi4firkqkvl9sofd/foundation-models/chat",
+    "Yandex.GPT3",
+    "url(images/Tiles/Yandex_GPT.png)",
+    "md"
   ],
-  [ //22
-    "https://github.com/MaxMukovin",
-    "GitHub",
-    "url(images/Tiles/22.png)"
+  [
+    "https://store.steampowered.com",
+    "Steam",
+    "url(images/Tiles/steam.png)",
+    "md"
   ],
-  [ //23
-    "https://speedtest.net",
-    "SpeedTest",
-    "url(images/Tiles/23.svg)"
+  [
+    "https://www.wildberries.ru",
+    "Wildberries",
+    "url(images/Tiles/wildberries.png)",
+    "bg"
   ],
-  [ //24
-    "https://trello.com/b/Jg3gVfPc/trello",
-    "Trello",
-    "url(images/Tiles/24.webp)"
+  [
+    "https://sbermegamarket.ru",
+    "Сбермегамаркет",
+    "url(images/Tiles/sbermegamarket.png)",
+    "bg"
   ],
-  [ //25
+  [
+    "https://market.yandex.ru",
+    "Яндекс.Маркет",
+    "url(images/Tiles/yandex_market.png)",
+    "bg"
+  ],
+  [
+    "https://www.ozon.ru/",
+    "Ozon",
+    "url(images/Tiles/ozon.png)",
+    "bg"
+  ],
+  [
+    "https://ru.aliexpress.com",
+    "AliExpress",
+    "url(images/Tiles/aliexpress.png)",
+    "bg"
+  ],
+  [
     "https://lingualeo.com",
     "Lingualeo",
-    "url(images/Tiles/25.png)"
+    "url(images/Tiles/lingualeo.png)",
+    "bg"
   ],
-  [ //26
+  [
+    "https://github.com/MaxMukovin",
+    "GitHub",
+    "url(images/Tiles/github.png)",
+    "md"
+  ],
+  [
+    "https://speedtest.net",
+    "SpeedTest",
+    "url(images/Tiles/speedtest.png)",
+    "bg"
+  ],
+  [
+    "https://app.todoist.com/",
+    "Todoist",
+    "url(images/Tiles/todoist.png)",
+    "bg"
+  ],
+  [
+    "https://miro.com/app/dashboard",
+    "Miro",
+    "url(images/Tiles/miro.png)",
+    "bg"
+  ],
+  [
     "https://www.litres.ru",
     "ЛитРес",
-    "url(images/Tiles/26.png)"
+    "url(images/Tiles/Litres.png)",
+    "bg"
   ],
-  [ //27
+  [
     "https://app.plex.tv",
     "Plex",
-    "url(images/Tiles/27.png)"
+    "url(images/Tiles/plex.png)",
+    "bg"
   ],
-  [ //28
+  [
     "https://www.avito.ru",
     "Avito",
-    "url(images/Tiles/28.png)"
+    "url(images/Tiles/avito.png)",
+    "bg"
   ],
-  [ //29
+  [
     "https://dev.rightech.io/",
-    "Rightech",
-    "url(images/Tiles/rightech.png)"
+    "Rightech.io",
+    "url(images/Tiles/rightech.png)",
+    "bg"
   ],
-  [ //30
-    "https://idea.gazprom-neft.ru/azs/questionary",
-    "АЗС ГПН",
-    "url(images/Tiles/30.png)"
+  [
+    "https://ib.online.gpb.ru/",
+    "Газпромбанк",
+    "url(images/Tiles/gazprombank.png)",
+    "bg"
   ],
-  [ //31
+  [
     "https://client.blurams.com/device/list",
     "Blurams",
-    "url(images/Tiles/31.png)"
+    "url(images/Tiles/blurams.png)",
+    "bg"
   ],
-  [ //32
+  [
     "http://indexrs.h1n.ru",
     "SandBox",
-    "url(images/Tiles/32.png)"
+    "url(images/Tiles/sandbox.png)",
+    "bg"
+  ],
+  [
+    "https://disk.yandex.ru/",
+    "Яндекс.Диск",
+    "url(images/Tiles/YandexDisk.png)",
+    "md"
+  ],
+  [
+    "https://cloud.mail.ru/public/Ag2B/pDs4kFJrz",
+    "CloudMail",
+    "url(images/Tiles/CloudMail.png)",
+    "bg"
+  ],
+  [
+    "https://www.icloud.com/",
+    "iCloud",
+    "url(images/Tiles/icloud.png)",
+    "md"
   ],
 ]

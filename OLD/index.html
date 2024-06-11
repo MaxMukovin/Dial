@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../main.css?1" type="text/css"/>
-<!--<meta http-equiv="cache-control" content="no-cache"/>-->
+<link rel="stylesheet" href="../main.css?34" type="text/css"/>
+<meta http-equiv="cache-control" content="no-cache"/>
 <link rel="shortcut icon" id="favicon" type="image/x-icon" href="favicon.ico"/>
 <meta charset="utf-8"/>
 <!--<meta name="theme-color" content="#025db0"/>-->
@@ -17,21 +17,21 @@
   <div id="background" class="background">
     <div id="window">
       <div class="main" id="dials">
-        <a id="cell_1"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_2"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_3"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_4"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_5"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_6"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_7"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_8"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_9"  class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_10" class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_11" class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_12" class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_13" class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_14" class="cell sm"><div class="overlay delay1_5"></div></a>
-        <a id="cell_15" class="cell sm"><div class="overlay delay1_5"></div></a>
+        <a id="cell_1"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_2"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_3"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_4"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_5"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_6"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_7"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_8"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_9"  class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_10" class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_11" class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_12" class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_13" class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_14" class="cell md"><div class="overlay delay1_5"></div></a>
+        <a id="cell_15" class="cell md"><div class="overlay delay1_5"></div></a>
         <a id="cell_16" class="cell md"><div class="overlay delay1_5"></div></a>
         <a id="cell_17" class="cell md"><div class="overlay delay1_5"></div></a>
         <a id="cell_18" class="cell md"><div class="overlay delay1_5"></div></a>
@@ -52,7 +52,7 @@
         <a id="cell_33" class="cell md"><div class="overlay delay1_5"></div></a>
         <a id="cell_34" class="cell md"><div class="overlay delay1_5"></div></a>
         <a id="cell_35" class="cell md"><div class="overlay delay1_5"></div></a>
-
+        
         <!--<div id="cell_33" class="cell md noactive">-->
         <!--  <div class="subMenu">-->
         <!--    <div class="blockMenu">-->
@@ -65,7 +65,7 @@
       </div>
     </div>
   </div>
-<script src="config.js?1"></script>
+<script src="config.js?35"></script>
 <script>
 //Получаем параметр target из URL
 const queryString = window.location.search;
@@ -79,10 +79,7 @@ if (param == "self") {target = "self"};
     dials.children[i].setAttribute("href", dialsArray[i][0]);     //ссылка
     dials.children[i].children[0].textContent = dialsArray[i][1]; //подпись
     dials.children[i].style.backgroundImage = dialsArray[i][2];   //фон
-    dials.children[i].target = "_" + target;                       //фрейм
-    dials.children[i].className = `${"cell" +" " + dialsArray[i][3]}`;
-    if(dialsArray[i][3]=="bg") {dials.children[i].style.backgroundColor = "inherit"};   //фон
-
+    dials.children[i].target = "_" + target                       //фрейм
   }
   function getRandom() {return Math.round(Math.random()*7)};
   var rnd = getRandom();
