@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../main.css?3" type="text/css"/>
+<link rel="shortcut icon" id="favicon" type="image/x-icon" href="favicon.ico"/>
+<meta charset="utf-8"/>
+<!--<meta name="theme-color" content="#025db0"/>-->
+<meta name="theme-color" content="#000"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Dial</title>
+</head>
+<body>
+  <div id="window" class="window">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="title">AIDA64 Monitor</div>
+    </div>
+    <div class="main" id="dials">
+      <a href="http://ringostarrr.ru:5001" class="cell" style="background-image: url(/AIDA64/Tiles/Monitor.png)">
+        <div class="overlay delay1_5"><p>PC</p></div>
+      </a>
+      <a href="http://ringostarrr.ru:5002"class="cell" style="background-image: url(/AIDA64/Tiles/Nettop.png)">
+        <div class="overlay delay1_5"><p>Nettop</p></div>
+      </a>
+    </div>
+  </div>
+  <script src="config.js?3"></script>
+  <script>
+    for (var i = 0; i < 2; i++) {
+      dials.children[i].setAttribute("href", dialsArray[i][0]);     //ссылка
+      dials.children[i].children[0].children[0].textContent = dialsArray[i][1]; //подпись
+      dials.children[i].style.backgroundImage = dialsArray[i][2];   //фон
+    }
+  </script>
+</body>
+</html>

@@ -24,12 +24,6 @@ var dialsArray = [
     "md"
   ],
   [
-    "https://news.google.com",
-    "GoogleNews",
-    "url(images/Tiles/GoogleNews.png)",
-    "md"
-  ],
-  [
     "https://translate.google.ru",
     "GoogleTranslate",
     "url(images/Tiles/google_translate.png)",
@@ -40,6 +34,12 @@ var dialsArray = [
     "YouTube",
     "url(images/Tiles/youtube.png)",
     "md"
+  ],
+  [
+    "https://vkvideo.ru/",
+    "VK Video",
+    "url(images/Tiles/VKvideo.png)",
+    "bg"
   ],
   [
     "https://keep.google.com",
@@ -87,24 +87,24 @@ var dialsArray = [
     "https://store.steampowered.com",
     "Steam",
     "url(images/Tiles/steam.png)",
-    "md"
-  ],
-  [
-    "https://www.wildberries.ru",
-    "Wildberries",
-    "url(images/Tiles/wildberries.png)",
     "bg"
   ],
   [
-    "https://sbermegamarket.ru",
-    "Сбермегамаркет",
-    "url(images/Tiles/sbermegamarket.png)",
+    "https://www.dns-shop.ru",
+    "DNS",
+    "url(images/Tiles/dns.png)",
     "bg"
   ],
   [
     "https://market.yandex.ru",
     "Яндекс.Маркет",
     "url(images/Tiles/yandex_market.png)",
+    "bg"
+  ],
+  [
+    "https://www.wildberries.ru",
+    "Wildberries",
+    "url(images/Tiles/wildberries.png)",
     "bg"
   ],
   [
@@ -156,7 +156,7 @@ var dialsArray = [
     "bg"
   ],
   [
-    "https://app.plex.tv",
+    "http://ringostarrr.ru:32400",
     "Plex",
     "url(images/Tiles/plex.png)",
     "bg"
@@ -204,9 +204,9 @@ var dialsArray = [
     "bg"
   ],
   [
-    "https://www.icloud.com/",
-    "iCloud",
-    "url(images/Tiles/icloud.png)",
-    "md"
+    "../AIDA64/index.html/",
+    "AIDA64 Monitor",
+    "url(images/Tiles/AIDA64.png)",
+    "bg"
   ],
 ]

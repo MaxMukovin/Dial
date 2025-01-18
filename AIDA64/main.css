@@ -1,0 +1,120 @@
+:root {
+  --main-width: 114vh;
+  --main-size: calc((var(--main-width))/3);
+  --main-margin: calc((var(--main-width))/12);;
+  --main-height: 95vh;
+  --main-margin-top: calc((100vh - var(--main-height))/2.6);
+}
+
+body {
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: verdana, sans-serif;
+}
+.header {
+  text-align: center;
+  /* height: 100%; */
+  margin: auto;
+  overflow: hidden;
+  height: 5vh;
+  /* background-color: red; */
+  position: relative;
+}
+.logo {
+  float: left;
+  height: 5vh;
+  width: 5vh;
+  background-image: url(favicon.ico);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  border-radius: 10%;
+}
+.title {
+  float: left;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: 6vh;
+  color: white;
+  font-size: 3vh;
+}
+#window {
+margin: auto;
+margin-top: var(--main-margin-top);
+width: var(--main-width);
+height: var(--main-height);
+overflow: hidden;
+}
+.main {
+  margin-top: var(--main-margin-top);
+}
+.cell {
+text-align: center;
+text-decoration: none;
+float: left;
+display: block;
+background-repeat: no-repeat;
+background-position: center calc((var(--main-width))/24);
+width: var(--main-size);
+height: var(--main-size);
+transform: scale(1);
+transition: transform .3s, box-shadow .3s ;
+transition-duration: .5s;
+background-color: #333;
+margin: var(--main-margin);
+z-index: -1;
+background-size: 40%;
+border-radius: 20%;
+box-shadow: 0px 15px 5px -10px rgba(0,0,0,0.2), 0px 10px 10px 0px rgba(0,0,0,0.14), 0px 5px 10px 0px rgba(0,0,0,0.12);
+}
+.cell:hover {
+position: relative;
+z-index: 99;
+transform: scale(1.1);
+box-shadow: 0px 22px 7px -12px rgba(0,0,0,0.1), 0px 12px 12px 0px rgba(0,0,0,0.14), 0px 7px 12px 0px rgba(0,0,0,0.12);
+}
+p {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  color: white;
+  font-size: 5vh;
+}
+#call_1 {
+  
+}
+
+.delay2 {transition-delay: 2s}
+.delay1 {transition-delay: 1s}
+.delay1_5 {transition-delay: 1.5s}
+.delay03 {transition-delay: 0.3s}
+
+
+@media (max-width: 126vh) {
+  :root {
+    --main-width: 90vw;
+    --main-size: calc((var(--main-width))/2.5);
+    --main-margin: calc((var(--main-size))/8);
+    /* --main-margin-top: calc((var(--main-width))/2.5/4); */
+  }
+  p {font-size: 5wh;}
+}
+
+
+@media screen and (orientation: portrait){
+  :root {
+    --main-width: 90vw;
+    --main-size: calc((var(--main-width))/2.5);
+    --main-margin: calc((var(--main-size))/8);
+    /* --main-margin-top: calc((var(--main-width))/2.5/4); */
+  }
+  p {font-size: 5vw;}
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
