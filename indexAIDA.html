@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../main.css?3" type="text/css"/>
-<link rel="shortcut icon" id="favicon" type="image/x-icon" href="favicon.ico"/>
+<link rel="stylesheet" href="../AIDA64/main.css?3" type="text/css"/>
+<link rel="shortcut icon" id="favicon" type="image/x-icon" href="AIDA64/favicon.ico"/>
 <meta charset="utf-8"/>
 <!--<meta name="theme-color" content="#025db0"/>-->
 <meta name="theme-color" content="#000"/>
@@ -16,15 +16,11 @@
       <div class="title">AIDA64 Monitor</div>
     </div>
     <div class="main" id="dials">
-      <a href="http://ringostarrr.ru:5001" class="cell" style="background-image: url(/AIDA64/Tiles/Monitor.png)">
-        <div class="overlay delay1_5"><p>PC</p></div>
-      </a>
-      <a href="http://ringostarrr.ru:5002"class="cell" style="background-image: url(/AIDA64/Tiles/Nettop.png)">
-        <div class="overlay delay1_5"><p>Nettop</p></div>
-      </a>
+      <a class="cell"><div class="overlay delay1_5"><p></p></div></a>
+      <a class="cell"><div class="overlay delay1_5"><p></p></div></a>
     </div>
   </div>
-  <script src="config.js?3"></script>
+  <script src="AIDA64/config.js?3"></script>
   <script>
     for (var i = 0; i < 2; i++) {
       dials.children[i].setAttribute("href", dialsArray[i][0]);     //ссылка

@@ -204,7 +204,7 @@ var dialsArray = [
     "bg"
   ],
   [
-    "../AIDA64/index.html/",
+    "../indexAIDA.html",
     "AIDA64 Monitor",
     "url(images/Tiles/AIDA64.png)",
     "bg"
